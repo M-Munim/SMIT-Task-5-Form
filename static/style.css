@@ -1,3 +1,15 @@
+::placeholder {
+    color: red !important;
+}
+
+label {
+    color: blue;
+}
+
+select option:first-child {
+    color: red !important;
+}
+
 #alert {
     max-height: 55px;
 }
@@ -5,14 +17,10 @@
 #alert p {
     line-height: 2px;
     font-weight: 600;
-    color: #721c24!important;
+    color: #721c24 !important;
 }
 
 .top {
-    /* 
-    background: url('/static/imgs/img1.jpeg') center center/cover no-repeat;
-    height: 200px;
-    position: relative; */
     position: relative;
     overflow: hidden;
     margin-top: -17px;
@@ -33,7 +41,6 @@
 .top-content {
     position: relative;
     z-index: 1;
-    /* Add styles for your content, such as background color, text color, etc. */
 }
 
 .top-content .logo {
@@ -52,5 +59,52 @@
 }
 
 nav ul li .green {
-color: #99c940;
+    color: #99c940;
+}
+
+
+.form-pic .form-pic-li {
+    margin-top: 10px;
+}
+
+.form-pic .form-pic-li li {
+    list-style: none;
+    font-size: 12px;
+}
+
+.last-li {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.button {
+    color: #fff;
+    background-color: #0d6db7;
+}
+
+/* Style the input element */
+.abc {
+    width: 90%;
+    height: 200px;
+    border: 1px dotted gray;
+    text-align: center;
+    padding: 10px;
+    display: block;
+    /* To ensure width and height take effect */
+}
+
+.image-upload-input {
+    display: none;
+}
+
+/* Hide the "Choose File" text */
+.image-upload-input::before {
+    content: "";
+}
+
+/* Style the container for the image upload */
+.image-upload {
+    display: inline-block;
+    /* text-align: center; */
+    /* Center align the label */
 }
